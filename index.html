@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smart Greenhouse</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <h1 class="title">Invernadero Automatizado</h1>
+        <div class="main">
+            <div class="slide active">
+                <div class="card">
+                    <div class="card__img" id="img01"></div>
+                    <div class="card__content">
+                        <p class="card__content-theme">Temperatura</p>
+                        <h2 class="card__content-header" id="temperatura"> -- </h2>
+                        <p class="card__content-paragraph">
+                            La temperatura es medida por medio del sensor denominado DHT, el cual es capaz tomar las lecturas de 0 °C a 50 °C con una precisión de 2 °C.
+                        </p>
+                        <a class="card__content-link">Eddy Alexander Cabrera Sanchez, 5190-18-17012</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="card__img" id="img02"></div>
+                    <div class="card__content">
+                        <p class="card__content-theme">Humedad</p>
+                        <h2 class="card__content-header" id="humedad"> -- </h2>
+                        <p class="card__content-paragraph">
+                            La humedad del terreno es medida por higrómetro de suelo llamado FC-28 que puede proporcionar valores que van desde 0 a 1023. Un suelo húmedo arrojara valores típicos entre 600 - 700 y un suelo seco proporcionara valores entre 800 a 1023.
+                        </p>
+                        <a class="card__content-link">Jorge José Barillas Paredes, 5190-19-4279</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <div class="card__img" id="img03"></div>
+                    <div class="card__content">
+                        <p class="card__content-theme">Luz Solar</p>
+                        <h2 class="card__content-header" id="luz"> -- </h2>
+                        <p class="card__content-paragraph">
+                            La intensidad solar es medida por medio de un sensor llamado LDR, el cual mide la intensidad de la luz por medio de una fotorresistencia capaz de capturar los valores de lúmenes expuestos por la luz solar, estos valores van de 0 a 250 y se considera una intensidad solar alta cuando el valor es mayor a 125.
+                        </p>
+                        <a class="card__content-link">Jurgen Allessandro Córdova Sosa, 5190-18-22962</a>
+                    </div>
+                </div>
+            </div>
+            <div class="prevnext">
+                <button class="prevnext-button" id="prev"></button>
+                <button class="prevnext-button" id="next"></button>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+        <script src="./js/index.js" type="module"></script>
+    </body>
+</html>
